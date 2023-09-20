@@ -31,8 +31,8 @@
 
 </table>
 <div class="ct">
-    <button onclick="reg()">註冊</button>
-    <button onclick="clean()">重置</button>
+    <button onclick="reg()" class="btn btn-outline-secondary">註冊</button>
+    <button onclick="clean()" class="btn btn-outline-secondary">重置</button>
 </div>
 
 <script>

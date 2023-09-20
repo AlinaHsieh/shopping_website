@@ -37,11 +37,14 @@
 #left
 {
 	display:inline-block;
-	width:15%;
+	width:12%;
 	padding:2%;
 	min-height:550px;
+	min-weight:300px;
 	vertical-align:top;
 }
+
+
 #left a
 {
 	display:block;
@@ -65,6 +68,7 @@
 	width:75%;
 	padding:2%;
 	min-height:90vh;
+	min-width: 500px;
 
 }
 #bottom
@@ -88,29 +92,33 @@
 {
 	min-width:80px;
 	padding:10px;
+	border: 1px solid white;
+
 
 }
+
 .tt
 {
 	background:#f09e7d;
-	/* border:1px solid #333; */
-	
+
 }
+
 .tt td
 {
 	background:#f09e7d;
-	/* border:1px solid #333; */
 }
+
 .pp
 {
 	background:#ffead0;
-	/* border:1px solid #333; */
-
 }
+
 .pp td
 {
 	background:#ffead0;
+
 }
+
 input[type=text],input[type=password],input[type=submit],button,.button,input[type=reset],input[type=button],select，textarea,input[type=number]
 {
 	background:#F3F3F3;
@@ -121,6 +129,7 @@ input[type=text],input[type=password],input[type=submit],button,.button,input[ty
 	margin:3px;
 	color:#333;
 }
+
 input[type=text],input[type=password]
 {
 	width:170px;

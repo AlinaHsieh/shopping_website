@@ -26,8 +26,8 @@ $row['pr']=unserialize($row['pr'])
     </tr>
 </table>
 <div class="ct">
-    <input type="hidden" name="id" value="<?=$row['id'];?>">
-    <input type="submit" value="修改">
-    <input type="reset" value="重置">
+    <input type="hidden" name="id" value="<?=$row['id'];?>" >
+    <input type="submit" value="修改" >
+    <input type="reset" value="重置" >
 </div>
 </form>

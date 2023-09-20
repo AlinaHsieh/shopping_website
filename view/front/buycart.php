@@ -40,8 +40,9 @@ if(!empty($_SESSION['cart'])){
     ?>
 </table>
 <div class="ct">
-<a href="./index.php"><img src="./icon/0411.jpg"></a>
-<a href="?do=checkout"><img src="./icon/0412.jpg"></a>
+<button type="button" class="btn btn-outline-secondary btn-sm" onclick="location.href='./index.php'">繼續選購商品</button>
+<button type="button" class="btn btn-secondary btn-sm" onclick="location.href='?do=checkout'">結帳</button>
+
 </div>
 <?php
 }else{

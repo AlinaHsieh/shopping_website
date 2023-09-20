@@ -38,3 +38,4 @@ $row['cart'] = unserialize($row['cart']);
         </td>
     </tr>
 </table>
+<button type="button" onclick="location.href='?do=order'">返回</button>

@@ -22,8 +22,8 @@
     </tr>
 </table>
 <div class="ct">
-    <button onclick="login('Admin')">登入</button>
-    <button onclick="clean()">重置</button>
+    <button class="btn btn-outline-secondary" onclick="login('Admin')">登入</button>
+    <button class="btn btn-outline-secondary" onclick="clean()">重置</button>
 </div>
 
 

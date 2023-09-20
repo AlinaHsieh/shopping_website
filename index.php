@@ -12,15 +12,16 @@ include_once "./base.php";
         <link href="./css/css.css" rel="stylesheet" type="text/css">
         <script src="./js/js.js"></script>
         <script src="./js/jquery-3.4.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
         <div id="main">
                 <a href="index.php" id="logo">
-                        <img src="./icon/LOGO.jpg" style="width:40%; margin:auto;" >
+                        <img src="./icon/LOGO.jpg" style="width:40%; margin:auto;">
                 </a>
                 <div id="top">
-                        <div >
+                        <div>
                                 <a href="index.php">回首頁</a> |
                                 <a href="?do=buycart">購物車</a> |
                                 <?php
@@ -68,9 +69,13 @@ include_once "./base.php";
 
                                 ?>
                         </div>
-                       
+
                 </div>
                 <div id="right">
+
+                        
+
+
                         <?php
                         $do = $_GET['do'] ?? 'main';
                         $file = "./view/front/{$do}.php";
@@ -87,10 +92,10 @@ include_once "./base.php";
 
                 </div>
                 <div id="bottom" style="line-height:70px;background-color:#CE631C; color:#FFF;" class="ct">
-                        <?= $Bottom->bot(); ?> 
+                        <?= $Bottom->bot(); ?>
                 </div>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

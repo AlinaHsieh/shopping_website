@@ -1,5 +1,5 @@
 <div class="ct">
-    <button onclick="location.href='?do=add_admin'">新增管理員</button>
+    <button class="btn btn-outline-secondary" onclick="location.href='?do=add_admin'">新增管理員</button>
 </div>
 <table class="all">
     <tr>
@@ -17,8 +17,8 @@
             <?php
             if($row['acc']!='admin'){
             ?>
-                <button onclick="location.href='?do=edit_admin&id=<?=$row['id']?>'">修改</button>
-                <button onclick="del('Admin',<?=$row['id']?>)">刪除</button>
+                <button class="btn btn-outline-secondary" onclick="location.href='?do=edit_admin&id=<?=$row['id']?>'">修改</button>
+                <button class="btn btn-outline-secondary" onclick="del('Admin',<?=$row['id']?>)">刪除</button>
             <?php
             }else{
                 echo "此帳號為最高權限";
