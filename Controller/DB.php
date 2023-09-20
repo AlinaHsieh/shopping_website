@@ -9,7 +9,7 @@ class DB {
 
     function __construct($table)
     {
-        $this->pdo = new PDO($this->dsn,'root','');
+        $this->pdo = new PDO($this->dsn,'s1120204','s1120204');
         $this->table = $table;
     }
 
