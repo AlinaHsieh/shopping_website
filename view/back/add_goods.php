@@ -10,12 +10,12 @@
         <td class="pp"><select name="mid" id="mid"></select></td>
     </tr>
     <tr>
-        <td class="tt">商品編號</td>
-        <td class="pp">亂數產生</td>
-    </tr>
-    <tr>
         <td class="tt">商品名稱</td>
         <td class="pp"><input type="text" name="name" id="name"></td>
+    </tr>
+    <tr>
+        <td class="tt">商品編號</td>
+        <td class="pp"><input type="text" name="no" id="no"></td>
     </tr>
     <tr>
         <td class="tt">商品價格</td>

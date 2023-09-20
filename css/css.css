@@ -3,6 +3,7 @@
 *,body
 {	box-sizing: border-box;
 	font-family:"微軟正黑體";
+	color:rgb(48, 48, 48);
 }
 
 #main
@@ -12,10 +13,16 @@
 	margin:20px auto 20px auto;
 	height: 90vh;
 	text-align: center;
-	
-	
+}
+#main .intro{
+	text-align: left;
+	margin:5px;
+	padding:5px;
 }
 
+#main a{
+	text-decoration: none;
+}
 #top a
 {
 	color:#CE631C;
@@ -45,6 +52,9 @@
 	font-size: 20px;
 	/* background:#F4C591; */
 }
+#left a:hover{
+	color: #ff8944;
+}
 .ct
 {
 	text-align:center;
@@ -55,8 +65,7 @@
 	width:71%;
 	padding:2%;
 	height:100vh;
-	/* border:#000 1px solid; */
-	/* overflow: auto; */
+
 }
 #bottom
 {
@@ -70,29 +79,37 @@
 }
 .all
 {
-	width:90%;
+	width:80%;
 	margin:10px auto 10px auto;
+	border-radius: 20px;
+
 }
 .all td
 {
 	min-width:80px;
 	padding:10px;
+
 }
 .tt
 {
-	background:#EF7429;
+	background:#f09e7d;
+	/* border:1px solid #333; */
+	
 }
 .tt td
 {
-	background:#EF7429;
+	background:#f09e7d;
+	/* border:1px solid #333; */
 }
 .pp
 {
-	background:#EFCA85;
+	background:#ffead0;
+	/* border:1px solid #333; */
+
 }
 .pp td
 {
-	background:#EFCA85;
+	background:#ffead0;
 }
 input[type=text],input[type=password],input[type=submit],button,.button,input[type=reset],input[type=button],select，textarea,input[type=number]
 {

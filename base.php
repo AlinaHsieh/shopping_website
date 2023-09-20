@@ -8,6 +8,7 @@ include_once __DIR__ . "/Controller/Admin.php";
 include_once __DIR__ . "/Controller/User.php";
 include_once __DIR__ . "/Controller/Type.php";
 include_once __DIR__ . "/Controller/Goods.php";
+include_once __DIR__ . "/Controller/Order.php";
 
 function dd($array){
     echo "<pre>";
@@ -24,3 +25,4 @@ $User = new User;
 $Admin = new Admin;
 $Type = new Type;
 $Goods = new Goods;
+$Order = new Order;

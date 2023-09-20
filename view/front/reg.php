@@ -7,7 +7,7 @@
     <tr>
         <td class="tt">帳號</td>
         <td class="pp"><input type="text" name="acc" id="acc">
-            <button onclick="chk_acc()">檢查帳號</button>
+            <!-- <button onclick="chk_acc()">檢查帳號</button> -->
         </td>
 
     </tr>

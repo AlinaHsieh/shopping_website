@@ -1,5 +1,5 @@
 <?php
-
+// unset($_SESSION['cart']);
 if(isset($_GET['id']) && isset($_GET['qt'])){ //先將拿到的值存進session裡,再判斷是否有登入
     $_SESSION['cart'][$_GET['id']]=$_GET['qt']; //商品id為Ｘ的有Ｙ件
 }
@@ -10,7 +10,7 @@ if(!isset($_SESSION['user'])){
 
 echo "<h2 class='ct'>{$_SESSION['user']}的購物車</h2>";
 
-if(isset($_SESSION['cart'])){
+if(!empty($_SESSION['cart'])){
 ?>
 <table class="all">
     <tr class="tt ct">
@@ -46,12 +46,14 @@ if(isset($_SESSION['cart'])){
 <?php
 }else{
     echo "購物車中無商品";
+    echo "<div class='ct'><a href='./index.php'><img src='./icon/0411.jpg'></a></div>";
 }
 ?>
 
 <script>
     function delCart(id){
-    $.post("./api/del_cart.php",{id},()=>{
+        // console.log("ok");
+    $.post("./api/delcart.php",{id},()=>{
         location.href='index.php?do=buycart';
     })
     }

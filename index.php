@@ -16,14 +16,12 @@ include_once "./base.php";
 
 <body>
         <div id="main">
-                <a href="index.php">
-                        <img src="./icon/LOGO.jpg" style="width:40%; margin:auto;">
+                <a href="index.php" id="logo">
+                        <img src="./icon/LOGO.jpg" style="width:40%; margin:auto;" >
                 </a>
                 <div id="top">
                         <div >
                                 <a href="index.php">回首頁</a> |
-                                <a href="?do=news">最新消息</a> |
-                                <a href="?do=look">購物流程</a> |
                                 <a href="?do=buycart">購物車</a> |
                                 <?php
                                 if (isset($_SESSION['user'])) {
@@ -69,11 +67,7 @@ include_once "./base.php";
 
                                 ?>
                         </div>
-                        <span>
-                                <div>進站總人數</div>
-                                <div style="color:#f00; font-size:28px;">
-                                        00005 </div>
-                        </span>
+                       
                 </div>
                 <div id="right">
                         <?php
@@ -91,8 +85,9 @@ include_once "./base.php";
                         ?>
 
                 </div>
-                <div id="bottom" style="line-height:70px;background:url(icon/bot.png); color:#FFF;" class="ct">
-                        <?= $Bottom->bot(); ?> </div>
+                <div id="bottom" style="line-height:70px;background-color:#CE631C; color:#FFF;" class="ct">
+                        <?= $Bottom->bot(); ?> 
+                </div>
         </div>
 
 </body>

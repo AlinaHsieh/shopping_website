@@ -17,26 +17,24 @@ include_once "./base.php";
 <body>
 	<iframe name="back" style="display:none;"></iframe>
 	<div id="main">
-		<div id="top">
-			<a href="index.php">
-				<img src="./icon/0416.jpg">
-			</a>
-			<img src="./icon/0417.jpg">
+		<div id="top" style="background-color:#ffead0; padding:30px; margin:auto">
+			
+			<span style="font-size: 48px; ; ">後臺管理中心</span>
 		</div>
 		<div id="left" class="ct">
 			<div style="min-height:400px;">
+				<a href="./index.php">前台首頁</a>
 				<a href="?do=admin">管理權限設置</a>
 				<a href="?do=th">商品分類與管理</a>
 				<a href="?do=order">訂單管理</a>
 				<a href="?do=user">會員管理</a>
 				<a href="?do=bot">頁尾版權管理</a>
-				<a href="?do=news">最新消息管理</a>
 				<a href="./api/logout.php?do=admin" style="color:#f00;">登出</a>
 			</div>
 		</div>
 		<div id="right">
 			<?php
-                        $do = $_GET['do']??'main';
+                        $do = $_GET['do']??'admin';
                         $file = "./view/back/{$do}.php";
                         $table = ucfirst($do);
 
@@ -45,12 +43,13 @@ include_once "./base.php";
                         }elseif(file_exists($file)){
                                 include($file);
                         }else{
-                                include "./view/back/main.php";
+                                include "./view/back/admin.php";
                         }
                 ?>
 		</div>
-		<div id="bottom" style="line-height:70px; color:#FFF; background:url(icon/bot.png);" class="ct">
-			<?=$Bottom->bot();?></div>
+		<div id="bottom" style="line-height:70px;background-color:#CE631C; color:#FFF;" class="ct">
+            <?= $Bottom->bot(); ?> 
+        </div>
 	</div>
 
 </body>
