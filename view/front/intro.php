@@ -37,6 +37,13 @@ $good = $Goods->find($_GET['id']);
 <script>
     function buy(id) {
         qt = $("#qt").val();
-        location.href = `?do=buycart&id=${id}&qt=${qt}`;
+        $.post("./api/chkqt.php",{id,qt},(res)=>{
+            if(parseInt(res)){
+                location.href = `?do=buycart&id=${id}&qt=${qt}`;
+            }else{
+                alert("超過可訂購數量");
+                location.reload();
+            }
+        })
     }
 </script>

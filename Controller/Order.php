@@ -6,6 +6,9 @@ class Order extends DB{
         parent::__construct('orders');
     }
     
-
+    function back(){
+        $view['rows'] = $this->all();
+        $this->view("./view/back/order.php",$view);
+    }
     
 }

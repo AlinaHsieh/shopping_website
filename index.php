@@ -25,6 +25,7 @@ include_once "./base.php";
                                 <a href="?do=buycart">購物車</a> |
                                 <?php
                                 if (isset($_SESSION['user'])) {
+                                        echo "<a href='?do=member'>會員中心</a> |";
                                         echo "<a href='./api/logout.php?do=user'>登出</a> |";
                                 } else {
                                         echo "<a href='?do=login'>會員登入</a> |";
