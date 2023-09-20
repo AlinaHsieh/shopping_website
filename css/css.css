@@ -37,7 +37,7 @@
 #left
 {
 	display:inline-block;
-	width:20%;
+	width:15%;
 	padding:2%;
 	min-height:550px;
 	vertical-align:top;
@@ -62,9 +62,9 @@
 #right
 {
 	display:inline-block;
-	width:71%;
+	width:75%;
 	padding:2%;
-	/* height:100vh; */
+	min-height:90vh;
 
 }
 #bottom
